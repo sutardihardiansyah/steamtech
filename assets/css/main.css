@@ -22,7 +22,8 @@
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary: #008374;
+  /* --color-primary: #008374; */
+  --color-primary: #15499c;
   --color-secondary: #f85a40;
 }
 
@@ -101,6 +102,150 @@ section {
   color: #6f6f6f;
 }
 
+.site-blocks-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.site-blocks-cover,
+.site-blocks-cover > .container > .row {
+  min-height: 600px;
+  height: calc(100vh);
+}
+.site-blocks-cover.inner-page,
+.site-blocks-cover.inner-page > .container > .row {
+  min-height: 600px;
+  height: calc(80vh);
+}
+.site-blocks-cover h1 {
+  font-size: 3.3rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+@media (max-width: 991.98px) {
+  .site-blocks-cover h1 {
+    font-size: 4rem;
+  }
+}
+.site-blocks-cover .sub-text {
+  font-size: 1.4rem;
+  color: gray;
+  font-weight: 300;
+}
+@media (max-width: 991.98px) {
+  .site-blocks-cover .sub-text {
+    color: #000;
+  }
+}
+
+.site-blocks-cover .img-wrap {
+  position: absolute;
+  z-index: -1;
+  width: calc(100%);
+  top: 0;
+  height: 100%;
+  z-index: 2;
+  right: 0;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+@media (max-width: 991.98px) {
+  .site-blocks-cover .img-wrap {
+    width: 100%;
+    right: 0%;
+    top: 0;
+  }
+  .site-blocks-cover .img-wrap .hero-slider:before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    opacity: 0.5;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.site-blocks-cover .img-wrap .slide {
+  height: 100vh;
+  position: relative;
+}
+.site-blocks-cover .img-wrap .slide.overlay {
+  position: relative;
+}
+.site-blocks-cover .img-wrap .slide.overlay:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.site-blocks-cover .img-wrap .slide img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.site-blocks-cover .intro {
+  z-index: 3;
+  position: relative;
+}
+.site-blocks-cover .intro .heading h1 {
+  color: #fff;
+}
+
+@media (max-width: 991.98px) {
+  .site-blocks-cover .intro .heading {
+    margin-left: 0;
+  }
+}
+.site-blocks-cover .intro .text p {
+  color: #fff;
+}
+@media (max-width: 991.98px) {
+  .site-blocks-cover .intro .text {
+    padding-left: 0;
+  }
+}
+
+.hero-slider .owl-nav {
+  position: absolute;
+  bottom: 120px;
+  right: 50px;
+  z-index: 100;
+}
+.hero-slider .owl-nav .owl-prev,
+.hero-slider .owl-nav .owl-next {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #007bff;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.section-title .sub-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  color: #b3b3b3;
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -241,7 +386,8 @@ section {
 # Header
 --------------------------------------------------------------*/
 .topbar {
-  background: #00796b;
+  /* background: #00796b; */
+  background: #052964;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -306,7 +452,8 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  /* max-height: 40px; */
+  max-height: 50px;
   margin-right: 6px;
 }
 
@@ -1750,6 +1897,7 @@ section {
 .contact .info-item {
   width: 100%;
   background-color: #009282;
+  background: #012968;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -1922,7 +2070,8 @@ section {
   margin-bottom: 30px;
 }
 
-.hero .btn-get-started {
+.hero .btn-get-started,
+.btn-get-started {
   font-family: var(--font-primary);
   font-weight: 500;
   font-size: 15px;
@@ -1937,7 +2086,12 @@ section {
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.hero .btn-get-started:hover {
+.site-blocks-cover .intro .btn-get-started {
+  background-color: var(--color-primary);
+}
+
+.hero .btn-get-started:hover,
+.btn-get-started:hover {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1967,7 +2121,8 @@ section {
   }
 
   .hero .btn-get-started,
-  .hero .btn-watch-video {
+  .hero .btn-watch-video,
+  .btn-get-started {
     font-size: 14px;
   }
 }
@@ -1992,7 +2147,8 @@ section {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: #008d7d;
+  background: #07285e;
+  /* background: #008d7d; */
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
