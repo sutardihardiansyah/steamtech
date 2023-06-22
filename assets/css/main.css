@@ -387,7 +387,8 @@ section {
 --------------------------------------------------------------*/
 .topbar {
   /* background: #00796b; */
-  background: #052964;
+  /* background: #052964; */
+  background: #000;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -439,7 +440,8 @@ section {
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  background-color: var(--color-primary);
+  /* background-color: var(--color-primary); */
+  background-color: #0f0e0e;
 }
 
 .header.sticked {
@@ -2758,7 +2760,8 @@ section {
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-  background-color: var(--color-primary);
+  /* background-color: var(--color-primary); */
+  background-color: #0f0e0e;
   padding: 50px 0;
   color: white;
 }
