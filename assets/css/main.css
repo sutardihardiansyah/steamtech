@@ -139,7 +139,8 @@ section {
 }
 .site-blocks-cover .sub-text {
   font-size: 1.4rem;
-  color: gray;
+  /* color: gray; */
+  color: #000;
   font-weight: 300;
 }
 @media (max-width: 991.98px) {
