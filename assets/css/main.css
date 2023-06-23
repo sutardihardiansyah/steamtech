@@ -202,8 +202,8 @@ section {
   top: 0;
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  /* -o-object-fit: cover; */
+  /* object-fit: cover; */
 }
 .site-blocks-cover .intro {
   z-index: 3;
