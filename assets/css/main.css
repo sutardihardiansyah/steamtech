@@ -25,6 +25,8 @@
   /* --color-primary: #008374; */
   --color-primary: #15499c;
   --color-secondary: #f85a40;
+  --color-primary-black: #0f0e0e;
+  --color-secondary-black: #000;
 }
 
 /* Smooth scroll behavior */
@@ -38,6 +40,10 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
+}
+
+body .tippy-box {
+  background: transparent !important;
 }
 
 a {
@@ -188,7 +194,7 @@ section {
   bottom: 0;
   right: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.4);
+  /* background: rgba(0, 0, 0, 0.4); */
 }
 .site-blocks-cover .img-wrap .slide img {
   position: absolute;
@@ -203,7 +209,7 @@ section {
   position: relative;
 }
 .site-blocks-cover .intro .heading h1 {
-  color: #fff;
+  color: #000;
 }
 
 @media (max-width: 991.98px) {
@@ -212,7 +218,7 @@ section {
   }
 }
 .site-blocks-cover .intro .text p {
-  color: #fff;
+  color: #000;
 }
 @media (max-width: 991.98px) {
   .site-blocks-cover .intro .text {
@@ -649,7 +655,8 @@ section {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 131, 116, 0.9);
+    /* background: rgba(0, 131, 116, 0.9); */
+    background: #0f0e0e;
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -748,7 +755,8 @@ section {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0, 106, 93, 0.8);
+    /* background: rgba(0, 106, 93, 0.8); */
+    background: rgba(15, 14, 14, 0.8);
     z-index: 9996;
   }
 }
@@ -1532,8 +1540,10 @@ section {
   background: #fff;
   border-radius: 10px;
   padding: 15px;
+  /* padding: 40px; */
   overflow: hidden;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  width: 205.31px;
 }
 
 .team .member img {
@@ -1542,14 +1552,15 @@ section {
 }
 
 .team .member .member-content {
-  padding: 0 20px 30px 20px;
+  /* padding: 0 20px 30px 20px; */
 }
 
 .team .member h4 {
   font-weight: 700;
   margin-top: 16px;
   margin-bottom: 2px;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 18px;
 }
 
 .team .member span {
@@ -1568,7 +1579,7 @@ section {
 
 .team .member .social {
   margin-top: 15px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -1911,8 +1922,9 @@ section {
 
 .contact .info-item {
   width: 100%;
-  background-color: #009282;
-  background: #012968;
+  /* background-color: #009282; */
+  background: #0c0b0b;
+
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -1948,7 +1960,7 @@ section {
 .contact .info-item p {
   padding: 0;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .contact .info-item:hover i {
@@ -2035,7 +2047,7 @@ section {
 
 .contact .php-email-form button[type="submit"],
 .contact .php-email-form button[type="button"] {
-  background: var(--color-primary);
+  background: var(--color-primary-black);
   border: 0;
   padding: 14px 45px;
   color: #fff;
@@ -2045,7 +2057,7 @@ section {
 
 .contact .php-email-form button[type="submit"]:hover,
 .contact .php-email-form button[type="button"]:hover {
-  background: rgba(0, 131, 116, 0.8);
+  background: rgba(10, 12, 12, 0.8);
 }
 
 @keyframes animate-loading {
