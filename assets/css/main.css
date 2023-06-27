@@ -72,6 +72,13 @@ h6 {
   background-size: cover;
 }
 
+.header-bg p {
+  font-size: 1.4rem;
+  /* color: gray; */
+  color: #fff;
+  font-weight: 300;
+}
+
 .header-bg h1 {
   font-size: 4rem;
   /* font-size: rem; */
@@ -245,6 +252,34 @@ h6 {
   color: var(--light);
 }
 /* /Header New */
+
+/* Gallery */
+.gallery-item {
+  position: relative;
+  display: block;
+}
+
+.gallery-item .gallery-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 100px !important;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.gallery-item:hover .gallery-text {
+  opacity: 1;
+  padding-bottom: 20px !important;
+}
+/* Gallery */
+
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/

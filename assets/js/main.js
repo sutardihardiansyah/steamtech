@@ -122,13 +122,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /**
-   * Initiate glightbox
-   */
-  const glightbox = GLightbox({
-    selector: ".glightbox",
-  });
-
-  /**
    * Scroll top button
    */
   const scrollTop = document.querySelector(".scroll-top");
