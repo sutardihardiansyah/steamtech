@@ -6,9 +6,14 @@ $(document).ready(function () {
     placement: "bottom",
     content: `<div class="card">
                 <div class="card-body">
-                  <h5>Education background</h5>
+                  <h5>Education Experience</h5>
                   <ul>
-                    
+                    <li>NASA consultant Australia</li>
+                    <li>NASA Team Leader Malaysia</li>
+                    <li>Aerospace Engineering</li>
+                    <li>Marine Engineering</li>
+                    <li>Pilot</li>
+                    <li>25 years experienced in Science educator, STEM & STEAM education</li>
                   </ul>
                 </div>
               </div>`,
