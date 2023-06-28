@@ -68,7 +68,7 @@ h6 {
 /* Header New */
 .header-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../img/hero/19.jpg) center center no-repeat;
+    url(../img/hero/19.webp) center center no-repeat;
   background-size: cover;
 }
 
